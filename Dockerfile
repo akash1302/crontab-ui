@@ -32,3 +32,4 @@ ENV   CRON_IN_DOCKER true
 EXPOSE $PORT
 
 CMD ["supervisord", "-c", "/etc/supervisord.conf"]
+CMD ln -s /usr/bin/node /usr/local/bin/node
